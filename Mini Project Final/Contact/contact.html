@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Contact</title>
+ <link rel="stylesheet" href="../Homepage/Homepage.css">
+ <link rel="stylesheet" type="text/css" href="../nav.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="image/x-icon" href="../logo_.png" />
+ </head>
+ <body>
+
+<nav class="navbar navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="../logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <input type='checkbox' id='toggle-menu' />
+            <label type="button" class='toggle-btn' for='toggle-menu'>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../Homepage/Homepage.php">HOME</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Select/Select.html">SERVICES</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Blog/Blog.html">BLOG</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About us/About us_dev.html">ABOUT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contact/contact.html">CONTACT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Launching/Launching.html">PROJECTS</a></li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="../Bookings/Bookings.html">BOOKING</a></li> -->
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="../Registration_Login/Registration.html">REGISTER</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Registration_Login/loginuser.html">LOGIN</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Homepage/Homepage.html">LOGOUT</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="contact" class="contact">
+    <h1 class="heading">contact us</h1>
+    <div class="contact-box-container mx-auto">
+    <div class="contact-box">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Mumbai, India - 400089</h3>
+    </div>
+    
+    <div class="contact-box">
+      <i class="fas fa-envelope"></i>
+      <h3>dreamwedding@gmail.com</h3>
+    </div>
+    
+    <div class="contact-box">
+      <i class="fas fa-phone"></i>
+      <h3>+91 7208303089</h3>
+    </div>
+  </div>
+    
+    <div class="form-container mx-auto">
+      <form action="Contact.php" method="post">
+      <div class="inputBox">
+        <input type="text" placeholder="First_name" required name="First_name">
+        <input type="text" placeholder="Last_name" required name="Last_name">
+      </div>
+      <input type="text" placeholder="Email" required name="Email">
+      <textarea id="" cols="30" rows="10" placeholder="Message" required name="Message"></textarea>
+      <input type="submit" value="Contact" name="Contact">
+    </form>
+    </div>
+    </section>
+ </body>
+ </html>

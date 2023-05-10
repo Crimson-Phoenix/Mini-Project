@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins, sans-serif;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(66, 66, 64));
+}
+
+.services{
+    width: 1300px;
+    padding: 30px, 60px;
+    margin: auto;
+}
+
+.services h1{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: 600;
+}
+ 
+.services h1:after{
+    content: '';
+    position: absolute;
+    Left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    background-color: #fff;
+    }
+
+.cards{
+    display:flex;
+    Justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    width: calc(34% -22px);
+    background: #f2f2f2;
+    color: #333;
+    padding: 40px 12px;
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 3s;
+    position: relative;
+}
+   
+.sbox h3{
+    font-size: 24px;
+}
+
+.sbox p{
+    margin: 20px 0;
+}
+    
+.sbox a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 18px;
+    transition: 0.5s;
+    margin: 20px 0;
+}
+    
+.sbox a:hover{
+    background: transparent;
+    border: 1px solid #333;
+    transform: scale(1.2);
+    background: rgb(0, 184, 148);
+}
+
+.card:hover .sbox i{
+    background: rgb(0, 184, 148);
+    color: #fff;
+    border-color: rgb(0, 184, 148);
+}
+    
+.card:after{
+    content: '';
+    height: 106%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    Left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.card:hover:after{
+    transform: rotate(13deg);
+    background-color: rgb(0, 184, 148);
+} 
+
+.img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+}
